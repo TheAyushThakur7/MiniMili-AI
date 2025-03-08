@@ -11,23 +11,26 @@
 
     <!-- Navbar -->
     <header>
-        <nav class="navbar">
-            <h1 class="logo">MiniMili AI</h1>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        
-        <div class="hero-content">
-            <h1>Find the Best AI Tools Instantly</h1>
-            <p>Stop wasting time. Get AI tool recommendations in seconds.</p>
-            <a href="#ai-stack" class="cta-button">Start Searching</a>
+    <nav class="navbar">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search AI Stacks...">
+            <button onclick="searchStacks()" class="search-btn">Go</button>
         </div>
-    </section>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <img src="https://i.ibb.co/6c9zbHrm/20250308-124516.png" alt="MiniMili AI Logo" class="hero-logo">
+        <h1>Find the Best AI Tools Instantly</h1>
+        <p>Stop wasting time. Get AI tool recommendations in seconds.</p>
+        <a href="#ai-stack" class="cta-button">Start Searching</a>
+    </div>
+</section>
 
     <!-- AI Stack Section -->
-    <section id="ai-stack" class="ai-stack">
+    <section id="ai-stack" class="ai-stack">        
     <div class="stack-box">
     <h3 class="stack-title">Clipping Streams Stack (YouTube, TikTok, etc.)</h3>
 
@@ -158,5 +161,31 @@
     </p>
 </div>
     </section>
+    <script>
+function searchStacks() {
+    let query = document.getElementById("search-input").value.toLowerCase();
+    let stacks = document.querySelectorAll(".stack-box");
+
+    for (let stack of stacks) {
+        let title = stack.querySelector(".stack-title").textContent.toLowerCase();
+        let headings = stack.querySelectorAll(".stack-heading");
+        let found = title.includes(query);
+
+        // Check headings inside the stack
+        for (let heading of headings) {
+            if (heading.textContent.toLowerCase().includes(query)) {
+                found = true;
+            }
+        }
+
+        if (found) {
+            stack.scrollIntoView({ behavior: "smooth", block: "start" });
+            stack.style.border = "2px solid #007BFF"; // Highlight searched stack
+            setTimeout(() => stack.style.border = "", 4000); // Remove highlight after 2s
+            break;
+        }
+    }
+}
+</script>
 </body>
 </html>
