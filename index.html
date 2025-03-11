@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MVFP1J2RJW"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3700T42LJZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-MVFP1J2RJW');
+  gtag('config', 'G-3700T42LJZ');
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,13 +34,20 @@
         <img src="https://i.ibb.co/Xr1GpdqN/20250309-025438.png" alt="MiniMili AI Logo" class="hero-logo">
         <h1>Find the Best AI Tools Instantly</h1>
         <p>Stop wasting time. Get AI tool recommendations in seconds.</p>
-        <a href="#ai-stack" class="cta-button">Start Searching</a>
+        <a id="dynamic-cta" href="#ai-stack" class="cta-button">Start Searching</a>
+        
     </div>
 </section>
-
+<!-- Category Navigation -->
+<div class="category-nav">
+    <button class="tab-btn active" onclick="showCategory('stacks')">AI Stacks</button>
+    <button class="tab-btn" onclick="showCategory('tools')">Individual Tools</button>
+    <button class="tab-btn" onclick="showCategory('prompts')">Prompts</button>
+</div>
     <!-- AI Stack Section -->
+    <section id="stacks" class="category-content active">
     <section id="ai-stack" class="ai-stack">        
-    <div class="stack-box">
+    <div class="stack-box">        
     <h3 class="stack-title">Clipping Streams Stack (YouTube, TikTok, etc.)</h3>
 
     <p class="stack-heading"><strong>Clipping:</strong></p>
@@ -58,6 +65,7 @@
         <a href="https://later.com/" target="_blank">Later</a>,  
         <a href="https://pallyy.com/" target="_blank">Pallyy</a><span class="sub-desc"> (Automated scheduling & publishing)</span>
     </p>
+    
 </div>
 
 <div class="stack-box">
@@ -169,32 +177,260 @@
         <a href="https://www.biginterview.com/" target="_blank">Big Interview</a><span class="sub-desc"> (Mock AI interview & real-time feedback)</span>
     </p>
 </div>
+<div class="stack-box" data-keywords="AI image generator, AI photo creator, AI artwork, text to image, image to image AI, AI painting, AI graphic design, AI picture maker, AI photo enhancement, AI art generator, AI design tools, AI visual content, deep learning images, AI upscaling, AI image editing, AI concept art, AI 3D rendering, AI-generated visuals, digital art AI, AI creative tools">
+    <h3 class="stack-title">AI Image Generator</h3>
+
+    <p class="stack-heading"><strong>From Image:</strong></p>
+    <p>
+        <a href="https://www.artbreeder.com/" target="_blank">Artbreeder</a>,  
+        <a href="https://runwayml.com/" target="_blank">RunwayML</a>
+        <span class="sub-desc"> (Generate & edit images using AI tools.)</span>
+    </p>
+
+    <p class="stack-heading"><strong>From Text:</strong></p>
+    <p>
+        <a href="https://deepai.org/machine-learning-model/text2img" target="_blank">DeepAI</a>,  
+        <a href="https://ideogram.ai/" target="_blank">Ideogram</a>
+        <span class="sub-desc"> (Convert text prompts into AI-generated images.)</span>
+    </p>
+</div>
+
+<div class="stack-box" data-keywords="AI voice generator, text to speech, TTS, AI speech synthesis, AI voice cloning, free TTS, AI voice assistant, neural voices, AI voiceover, text to sound, AI audio generator, realistic AI voices, AI-generated voice, synthetic speech, AI vocal creation, AI singing voice, AI podcast voice, AI dubbing, AI audiobook narration, deep learning voice synthesis">
+    <h3 class="stack-title">AI Voice Stack</h3>
+
+    <p class="stack-heading"><strong>Voice Maker:</strong></p>
+    <p>
+        <a href="https://ttsmp3.com/" target="_blank">TTSMP3</a>,  
+        <a href="https://www.fakeyou.com/" target="_blank">FakeYou</a>
+        <span class="sub-desc"> (Generate voice from text by AI tools.)</span>
+    </p>
+
+    <p class="stack-heading"><strong>Auto Subtitles:</strong></p>
+    <p>
+        <a href="https://www.capcut.com/" target="_blank">CapCut</a>,  
+        <a href="https://www.veed.io/" target="_blank">Veed.io</a>
+        <span class="sub-desc"> (AI generated subtitles.)</span>
+    </p>
+</div>
     </section>
+    </section>
+    <!-- Individual Tools Section (Initially Hidden) -->
+    <!-- Individual Tools Section (Same as AI Stacks) -->
+<section id="tools" class="category-content">
+    <section class="ai-stack">  
+
+        <div class="stack-box">
+            <h3 class="stack-title">Image Generator</h3>
+            <p><strong>Tool:</strong> <a href="https://ideogram.ai/" target="_blank">Ideogram</a></p>
+            <p><strong>Function:</strong> AI-powered image generation from text prompts.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Video Generator</h3>
+            <p><strong>Tool:</strong> <a href="https://runwayml.com/" target="_blank">RunwayML</a></p>
+            <p><strong>Function:</strong> Create AI-generated videos and motion graphics.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">Text-to-Speech Converter</h3>
+            <p><strong>Tool:</strong> <a href="https://elevenlabs.io/" target="_blank">ElevenLabs</a></p>
+            <p><strong>Function:</strong> Generate ultra-realistic AI voices for narration.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Writing Assistant</h3>
+            <p><strong>Tool:</strong> <a href="https://www.copy.ai/" target="_blank">Copy AI</a></p>
+            <p><strong>Function:</strong> Generate high-quality marketing copy and content.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Code Generator</h3>
+            <p><strong>Tool:</strong> <a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a></p>
+            <p><strong>Function:</strong> Auto-completes and suggests code using AI.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Chatbot</h3>
+            <p><strong>Tool:</strong> <a href="https://chat.openai.com/" target="_blank">ChatGPT</a></p>
+            <p><strong>Function:</strong> AI chatbot for conversations, research, and writing.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Email Personalization</h3>
+            <p><strong>Tool:</strong> <a href="https://www.smartwriter.ai/" target="_blank">SmartWriter AI</a></p>
+            <p><strong>Function:</strong> Personalize cold emails with AI-driven outreach.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Resume Builder</h3>
+            <p><strong>Tool:</strong> <a href="https://www.novoresume.com/" target="_blank">Novoresume</a></p>
+            <p><strong>Function:</strong> AI-powered resume formatting and templates.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Cover Letter Generator</h3>
+            <p><strong>Tool:</strong> <a href="https://www.tealhq.com/" target="_blank">Teal</a></p>
+            <p><strong>Function:</strong> Generates personalized cover letters quickly.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Job Application Tracker</h3>
+            <p><strong>Tool:</strong> <a href="https://huntr.co/" target="_blank">Huntr</a></p>
+            <p><strong>Function:</strong> Organizes applications and interview schedules.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Video Editing</h3>
+            <p><strong>Tool:</strong> <a href="https://www.descript.com/" target="_blank">Descript</a></p>
+            <p><strong>Function:</strong> AI-powered video and podcast editing.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Background Music Generator</h3>
+            <p><strong>Tool:</strong> <a href="https://soundraw.io/" target="_blank">Soundraw</a></p>
+            <p><strong>Function:</strong> AI-generated background music and sound effects.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Sales Email Optimization</h3>
+            <p><strong>Tool:</strong> <a href="https://www.lemlist.com/" target="_blank">Lemlist</a></p>
+            <p><strong>Function:</strong> AI-driven email deliverability and automation.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Logo Generator</h3>
+            <p><strong>Tool:</strong> <a href="https://looka.com/" target="_blank">Looka</a></p>
+            <p><strong>Function:</strong> AI-based logo design and branding.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI SEO Optimization</h3>
+            <p><strong>Tool:</strong> <a href="https://www.surferseo.com/" target="_blank">Surfer SEO</a></p>
+            <p><strong>Function:</strong> AI-powered content optimization for SEO.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Product Descriptions</h3>
+            <p><strong>Tool:</strong> <a href="https://www.jasper.ai/" target="_blank">Jasper AI</a></p>
+            <p><strong>Function:</strong> Generates AI-driven product descriptions.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Presentation Creator</h3>
+            <p><strong>Tool:</strong> <a href="https://www.beautiful.ai/" target="_blank">Beautiful AI</a></p>
+            <p><strong>Function:</strong> AI-generated professional presentations.</p>
+        </div>
+
+        <div class="stack-box">
+            <h3 class="stack-title">AI Document Summarizer</h3>
+            <p><strong>Tool:</strong> <a href="https://www.summarize.tech/" target="_blank">Summarize.tech</a></p>
+            <p><strong>Function:</strong> Summarizes YouTube videos and transcripts using AI.</p>
+        </div>
+
+    </section>
+</section>
+
+<!-- Prompts Section (Same as AI Stacks) -->
+<section id="prompts" class="category-content">
+    <section class="ai-stack">  
+        <div class="stack-box">
+            <h3 class="stack-title">Content Idea Prompt</h3>
+            <p><strong>Prompt:</strong> "Give me 10 viral YouTube video ideas related to AI automation."</p>
+        </div>
+    </section>
+</section>
     <script>
 function searchStacks() {
-    let query = document.getElementById("search-input").value.toLowerCase();
+    let query = document.getElementById("search-input").value.trim().toLowerCase();
     let stacks = document.querySelectorAll(".stack-box");
+    let found = false;
 
+    if (query === "") {
+        alert("Please enter a search term.");
+        return;
+    }
+
+    // 🔹 Step 1: Check only titles first
     for (let stack of stacks) {
         let title = stack.querySelector(".stack-title").textContent.toLowerCase();
-        let headings = stack.querySelectorAll(".stack-heading");
-        let found = title.includes(query);
-
-        // Check headings inside the stack
-        for (let heading of headings) {
-            if (heading.textContent.toLowerCase().includes(query)) {
-                found = true;
-            }
+        if (title.includes(query)) {
+            highlightAndScroll(stack);
+            return; // ✅ Stops search after finding title match
         }
+    }
 
-        if (found) {
-            stack.scrollIntoView({ behavior: "smooth", block: "start" });
-            stack.style.border = "2px solid #007BFF"; // Highlight searched stack
-            setTimeout(() => stack.style.border = "", 4000); // Remove highlight after 2s
-            break;
+    // 🔹 Step 2: If no title match, check keywords & content
+    for (let stack of stacks) {
+        let content = stack.cloneNode(true);
+        let links = content.querySelectorAll("a");
+
+        // Remove <a> text from content before searching
+        links.forEach(link => link.textContent = "");
+
+        let textContent = content.textContent.toLowerCase();
+        let keywords = stack.getAttribute("data-keywords") ? stack.getAttribute("data-keywords").toLowerCase() : "";
+
+        if (textContent.includes(query) || keywords.includes(query)) {
+            highlightAndScroll(stack);
+            return; // ✅ Stops search after finding a match
         }
+    }
+
+    // 🔹 Step 3: If no match at all, show an alert
+    alert("No matching AI stack found.");
+}
+
+function highlightAndScroll(stack) {
+    stack.scrollIntoView({ behavior: "smooth", block: "start" });
+    stack.style.border = "2px solid #007BFF"; 
+    setTimeout(() => stack.style.border = "", 4000);
+}
+function showCategory(category) {
+    document.querySelectorAll('.category-content').forEach(section => {
+        section.style.display = 'none';
+    });
+
+    document.querySelectorAll('.tab-btn').forEach(button => {
+        button.classList.remove('active');
+    });
+
+    document.getElementById(category).style.display = 'block';
+
+    // Ensure the correct button gets active class
+    document.querySelector(`.tab-btn[onclick="showCategory('${category}')"]`).classList.add('active');
+}
+
+// Ensure AI Stacks is selected on page load
+document.addEventListener("DOMContentLoaded", function () {
+    showCategory('stacks');
+});
+
+function showCategory(category) {
+    document.querySelectorAll('.category-content').forEach(section => {
+        section.style.display = 'none';
+    });
+
+    document.querySelectorAll('.tab-btn').forEach(button => {
+        button.classList.remove('active');
+    });
+
+    document.getElementById(category).style.display = 'block';
+    document.querySelector(`.tab-btn[onclick="showCategory('${category}')"]`).classList.add('active');
+
+    // 🔹 Dynamically update the CTA button link
+    let ctaButton = document.getElementById('dynamic-cta');
+    if (category === 'stacks') {
+        ctaButton.href = "#ai-stack";
+    } else if (category === 'tools') {
+        ctaButton.href = "#tools";
+    } else if (category === 'prompts') {
+        ctaButton.href = "#prompts";
     }
 }
 </script>
+<footer class="footer">
+    <p>Made by <strong>Ayush Thakur</strong></p>
+    <p>Contact: <a href="mailto:minimilisearch@gmail.com">minimilisearch@gmail.com</a></p>
+</footer>
 </body>
 </html>
